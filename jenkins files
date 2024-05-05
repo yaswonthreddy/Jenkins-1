@@ -1,0 +1,20 @@
+jenkinsfile1
+pipline {
+agent  any
+stages{
+stage  (gitcheckout)
+{
+step ()
+git clone url
+}
+
+stage (build)
+{
+step (build)
+mvn clean package 
+
+}
+stage (deploy)
+step ()
+
+{
